@@ -1,5 +1,5 @@
 import { auth } from '../src/lib/auth';
-import { PrismaClient } from '../generated/client';
+import { PrismaClient } from '../generated/prisma/client';
 
 const prisma = new PrismaClient();
 

@@ -14,9 +14,10 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
+    "allowJs": true,
     "paths": {
       "@/*": ["src/*"],
-      "@generated/*": ["generated/*"]
+      "@generated/*": ["generated/*"],
     },
     "incremental": true,
     "skipLibCheck": true,

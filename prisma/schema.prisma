@@ -1,6 +1,13 @@
 generator client {
-  provider = "prisma-client-js"
-  output   = "../generated"
+  provider     = "prisma-client"
+  output       = "../generated/prisma"
+  moduleFormat = "cjs"
+}
+
+generator zod {
+  provider         = "zod-prisma-types"
+  output           = "../generated/zod"
+  prismaClientPath = "../prisma/client"
 }
 
 datasource db {
